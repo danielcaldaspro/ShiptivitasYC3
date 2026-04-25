@@ -65,12 +65,25 @@
                 document.getElementById('avgAfter').innerText = avgA.toFixed(2);
                 document.getElementById('growthPercent').innerText = '+' + g.toFixed(2) + '%';
 
+                const avgTotal = data.dau.reduce((a, b) => a + b.users, 0) / data.dau.length;
+
                 // DAU Chart
                 new Chart(document.getElementById('dauChart'), {
                     type: 'line',
                     data: {
                         labels: labels,
-                        datasets: [{
+                        datasets: [
+                        {
+                            label: 'Average DAU',
+                            data: Array(labels.length).fill(avgTotal),
+                            borderColor: '#333',
+                            borderDash: [5, 5],
+                            borderWidth: 2,
+                            fill: false,
+                            pointRadius: 0,
+                            pointHoverRadius: 0
+                        },
+                        {
                             label: 'Daily Active Users',
                             data: dauValues,
                             borderColor: '#ff6600',

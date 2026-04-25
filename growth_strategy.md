@@ -1,27 +1,21 @@
-# Shiptivitas Growth Strategy - Task 3
+# Estratégia Shiptivitas - Baseada em Dados
 
-## 📊 Analytics Summary
-- **Average DAU Before Feature**: 5.29
-- **Average DAU After Feature**: 11.73
-- **DAU Growth**: +121.49%
-- **Engagement Peak**: 17 status changes/day
+## 📈 O que os números dizem:
+Nossa análise revelou um salto real: saímos de 5 usuários diários para quase 12 (**+121% de crescimento**). O engajamento é intenso, com dias chegando a **17 mudanças de status**. O time está operando o Kanban pra valer.
 
-## 💡 Growth Hypotheses
+## 💡 3 Ideias para Crescer Mais:
 
-### 1. Real-time Collaboration & Activity Feed
-- **Hypothesis**: Freight managers are currently working in silos and need to refresh manually to see updates. Providing real-time feedback will decrease friction and increase daily usage frequency.
-- **Expected Impact**: +20% Session Frequency; Improved user retention.
-- **The Feature**: A "Recent Activity" sidebar and browser push notifications that trigger whenever a card status is changed by a team member.
+### 1. Feed de Atividade em Tempo Real
+- **Hipótese**: Com picos de 17 mudanças/dia, os gestores perdem o fio da meada. Saber "quem moveu o quê" instantaneamente evita reuniões desnecessárias.
+- **Impacto**: Aumento de 20% na frequência de acessos diários.
+- **O que é**: Uma barra lateral que mostra as últimas ações do time, como um "feed de notícias" do projeto.
 
-### 2. Granular Task Checklists
-- **Hypothesis**: High-level cards don't capture the complexity of freight logistics. Users are likely using external tools (spreadsheets/paper) for sub-steps. Bringing this into the card will increase "stickiness".
-- **Expected Impact**: +30% Time-on-site; Increased operational reliance on the platform.
-- **The Feature**: A sub-task checklist inside each card modal, allowing users to track the micro-steps required to move a card to "Complete".
+### 2. Nudge de "Tarefa Travada"
+- **Hipótese**: O crescimento do DAU mostra que mais gente está usando, mas a variação nas mudanças indica que alguns cards ficam "esquecidos" por dias.
+- **Impacto**: Melhora o tempo de entrega e traz o usuário de volta ao app para resolver gargalos.
+- **O que é**: Um alerta visual em cards que não mudam de status há mais de 48 horas.
 
-### 3. Mobile-Optimized PWA for Yard Managers
-- **Hypothesis**: Managers in the field (docks/yards) lack access to desktops, creating a data lag. Mobile access will enable real-time status updates from the point of operation.
-- **Expected Impact**: Increase in off-peak DAU; Real-time data accuracy for the entire company.
-- **The Feature**: A Progressive Web App (PWA) version of the board with a simplified mobile interface designed for one-handed status updates.
-
----
-**SQL Queries for this data can be found in `answer.sql`.**
+### 3. Quick-Actions para Mobile
+- **Hipótese**: O dobro de usuários significa que o app saiu do escritório e foi para o pátio/docas, onde ninguém usa notebook.
+- **Impacto**: Captura dados em tempo real direto da operação, eliminando o atraso no registro das informações.
+- **O que é**: Uma interface mobile simples para "Check-in/Check-out" rápido de cargas via celular.

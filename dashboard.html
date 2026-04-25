@@ -102,15 +102,32 @@
                 });
 
                 // Changes Chart
+                const avgChanges = data.changes.reduce((a, b) => a + b.count, 0) / data.changes.length;
+
                 new Chart(document.getElementById('changesChart'), {
                     type: 'bar',
                     data: {
                         labels: data.changes.map(c => c.day),
-                        datasets: [{
+                        datasets: [
+                        {
+                            label: 'Average Changes',
+                            data: Array(data.changes.length).fill(avgChanges),
+                            borderColor: '#333',
+                            borderDash: [5, 5],
+                            borderWidth: 2,
+                            type: 'line',
+                            fill: false,
+                            pointRadius: 0,
+                            pointHoverRadius: 0
+                        },
+                        {
                             label: 'Status Changes',
                             data: data.changes.map(c => c.count),
                             backgroundColor: '#ff6600'
                         }]
+                    },
+                    options: {
+                        plugins: { legend: { display: false } }
                     }
                 });
             });

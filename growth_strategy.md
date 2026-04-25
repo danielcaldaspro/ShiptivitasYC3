@@ -1,21 +1,21 @@
-# Estratégia Shiptivitas - Baseada em Dados
+# Estratégia de Crescimento Shiptivitas (Task 3)
 
-## 📈 O que os números dizem:
-Nossa análise revelou um salto real: saímos de 5 usuários diários para quase 12 (**+121% de crescimento**). O engajamento é intenso, com dias chegando a **17 mudanças de status**. O time está operando o Kanban pra valer.
+## 📊 Insights dos Dados
+Nossa análise revelou um crescimento de **121.5% no DAU**, mas com alta volatilidade. O trabalho ocorre em **surtos (picos de 17 mudanças/dia)** seguidos de dias silenciosos. O engajamento é real, mas reativo.
 
-## 💡 3 Ideias para Crescer Mais:
+## 💡 3 Ideias Actionable
 
-### 1. Feed de Atividade em Tempo Real
-- **Hipótese**: Com picos de 17 mudanças/dia, os gestores perdem o fio da meada. Saber "quem moveu o quê" instantaneamente evita reuniões desnecessárias.
-- **Impacto**: Aumento de 20% na frequência de acessos diários.
-- **O que é**: Uma barra lateral que mostra as últimas ações do time, como um "feed de notícias" do projeto.
+### 1. Previsão de "Onda de Carga"
+- **Hypothesis**: A atividade é explosiva e imprevisível. Antecipar picos de trabalho evitaria gargalos e estabilizaria o uso da plataforma.
+- **Expected Impact**: Redução de 25% no tempo de espera das tarefas e um DAU mais estável.
+- **What the feature is**: Um painel de "Previsão de Fluxo" que alerta o time 24h antes de um acúmulo de cards com prazos próximos coincidirem.
 
-### 2. Nudge de "Tarefa Travada"
-- **Hipótese**: O crescimento do DAU mostra que mais gente está usando, mas a variação nas mudanças indica que alguns cards ficam "esquecidos" por dias.
-- **Impacto**: Melhora o tempo de entrega e traz o usuário de volta ao app para resolver gargalos.
-- **O que é**: Um alerta visual em cards que não mudam de status há mais de 48 horas.
+### 2. Geofence Status Sync
+- **Hypothesis**: Dias com alto DAU mas poucas mudanças indicam que o time está apenas monitorando, esperando por eventos externos para agir manualmente.
+- **Expected Impact**: Aumento de 40% na precisão dos dados em tempo real e automação do fluxo manual.
+- **What the feature is**: Automação via GPS que move cartões entre colunas automaticamente quando o veículo físico entra ou sai de áreas geofuncionais pré-definidas.
 
-### 3. Quick-Actions para Mobile
-- **Hipótese**: O dobro de usuários significa que o app saiu do escritório e foi para o pátio/docas, onde ninguém usa notebook.
-- **Impacto**: Captura dados em tempo real direto da operação, eliminando o atraso no registro das informações.
-- **O que é**: Uma interface mobile simples para "Check-in/Check-out" rápido de cargas via celular.
+### 3. Handoff Colaborativo (Passagem de Bastão)
+- **Hypothesis**: A queda brusca no DAU em certos dias ocorre por falta de clareza na responsabilidade da próxima etapa. O fluxo "morre" na mão de alguém.
+- **Expected Impact**: Redução da volatilidade do DAU em 30% através de um efeito dominó de notificações.
+- **What the feature is**: Uma função de "Marcar Próximo Responsável" ao mover um card, notificando instantaneamente a pessoa que deve assumir a carga na nova coluna.
